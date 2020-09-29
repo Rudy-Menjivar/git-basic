@@ -3,35 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BCS</title>
-    <link href="style.css" rel="stylesheet">
-
+    <title>Git-Basic</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1 id="centered">Coding Notes</h1>
+    <h1 id="centered">Git-Basic-Notes</h1>
     <ul>
-    <h3>Friendly coding reminders:</h3>
+    <h2>Friendly coding reminders:</h2>
     <li>The first rule of Coding Bootcamp is to not talk about Coding Bootcamp! :)</li>
     <li>In order to copy someone else's repository, you must first Fork it via Github/Gitlab</li>
     <li>Next, you must clone it in order to download a repository to your computer</li>
     <li>You'll also need to launch git on your computer to start making changes locally to your recently cloned repo along with Visual Code</li>
+    <br><img src="assets/yancy-min-842ofHC6MaI-unsplash.jpg"
+    alt="Coding image" width="500" height="200">
     </ul>
 
-    <ol><b>Copying from an existing repository</b>
+    <ol><h2>Git bash Navigation & Visual Studio Code</h2>
     <li>First, start by <b>Forking</b> the repository via Github</li>
-    <li>Then select <b>Code</b> within Github/Gitlab and copy Clone address</li>
+    <li>Then select <b>Code</b> within Github/Gitlab and <b>copy Clone address</b></li>
     <li>Launch <b>Git</b> (Git Bash) locally and ensure that you're currently in the directory where you'd like this new repo</li>
     <li>You can type <span class="hcode">pwd</span> to verify your current directory</li>
     <li>Type <span class="hcode">cd </span> and the directory that you want to navigate to (if needed)</li>
     <li>Once ready, type the following command and paste the address from step 2:</li>
     <dt><span class="hcode">git clone github@github.com:name/projectname.git</span></dt>
     </ol>
-
     
     <p>At this point you have copied the repo files from Github to your local machine (laptop/pc).
     Next step involves moving into the new directory that you have just copied.</p></ul>
     
-    <ul><b>Editing the newly copied files:</b>
+    <ul><h3>Git bash navigation & Visual Studio Code:</h3>
     <li>Type <span class="hcode">ls</span></li>
     <li>Copy the name of the newly copied directory, which will match the name of the repo</li>
     <li>Type <span class="hcode">cd </span>and paste the name of of the new directory (PC users, right click mouse button)</li>
@@ -41,13 +41,13 @@
     <li>Don't forget to save your work</li>  
     </ul>
 
-    <ol>
-    <dl>
-    Now it's time to upload or send your changes back to Github.
-    <dt>Select the files you want to send back to Github</dt>
-    <dd>-To add all modified files to Github, simply type <span class="hcode">git add --all</span></dd>
+    <ul>
+    <dl><h3>Uploading changes back to Github</h3>
+    <dt>Using Git bash, select the files you want to send back to Github</dt>
+    <dd>To add all modified files to Github, simply type:
+    <dd><span class="hcode">git add --all</span></dd></li>
     </dl>
-    </ol>
+    </ul>
     
     <ol><h3>Commit Time:</h3>
     <dt>Now let's Commit the files and include a description of the Commit</dt>
@@ -62,7 +62,8 @@
     <ol><h3>Pushing an existing repository</h3>
     <li>First, let's initialize your new local repository</li>
     <dt><span class="hcode">git init</span></dt>
-    <li>Connect to existing repo to Github</li>
+    <li>Connect to existing repo from Github</li>
+    <dt>-Remember to Clone the existing github address</dt>
     <dt><span class="hcode"> git remote add origin git@github.com:name/project-name.git</span></dt>
     <li>Next, add of your new repo files by typing:</li>
     <dt><span class="hcode">git add --all</span></dt>

@@ -9,6 +9,8 @@ body {
 }
 #keysteps {color:rgb(94, 15, 15)}
 
+#codeimage {width: 5px;}
+
 .hcode {
     background-color:rgb(102, 95, 87);
     border: 1px solid black;
