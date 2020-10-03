@@ -8,16 +8,14 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <!-- <h1 id="centered">Let's Git-Basic</h1> -->
-
-    <div class="darkb" class="jumbotron jumbotron-fluid">
+    <header class="darkb" class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="darkb" class="display-4">
             Let's Git-Basic
             </h1>
-            <p class="darkb" class="lead">Your guide to get your project going.</p>
+            <p class="darkb" class="lead">Your basic guide to get your project going.</p>
         </div>
-    </div>
+      </header>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -56,10 +54,27 @@
       </nav>
       <!-- From BS, Navbar -->
     
-    <div class="w-50 p-3" style="background-color: rgb(0, 0, 0);">
-        <!-- From BS, Sizing -->
-        <h2>Let's Git-Basic Guide</h2>
-        <p>The purpose of this guide is to help beginners and some of us that need a little reminding, to get a project downloaded or uploaded with GitHub or GitLab.<p>
+    <!-- <section class="w-50 p-3" style="background-color: rgb(0, 0, 0);"> -->
+        <!-- From BS, Sizing (replaced Div with Section) -->
+        <!-- <h2>Let's Git-Basic Guide</h2>
+        <p>The purpose of this guide is to help beginners and some of us that need a little reminding, to start working on repositories.  Also included are instructions to get a repository downloaded or uploaded with GitHub or GitLab.<p>
+       </section> -->
+
+    <div class="container-fluid"> <!-- From BS, Grid 1 of 3, applied cont-fluid -->
+      <div class="row">
+        <div class="col-sm-4" style="background-color: rgb(0, 0, 0);"> <!-- Added bg color-->
+          <h2>Let's Git-Basic Guide</h2>
+          <p>The purpose of this guide is to help beginners and some of us that need a little reminding, to start working on repositories. Also included are instructions to get a repository downloaded or uploaded with GitHub or GitLab.<p>
+          <br><img src="assets/yancy-min-842ofHC6MaI-unsplash.jpg"
+          alt="Coding image" width="500" height="200">
+        </div>
+        <div class="col-sm-8" style="background-color: rgb(121, 96, 42);">
+          <h3>Before getting started:</h3>
+          <li>In order to copy someone else's repository to your won GitHub repositories, you must first <u>Fork</u> it via Github/Gitlab</li>
+          <li>Next, if you want to download a copy to your computer, then you must <u>Clone</u> it</li>
+          <li>You'll also need to launch git on your computer to start making changes locally to your recently cloned repo along with VSC (Visual Code)</li>
+        </div>
+      </div>
     </div>
 
     <!-- <div class="container-fluid">
@@ -67,15 +82,14 @@
     <p>The purpose of this guide is to help beginners and some of us that need a little reminding, to get a project downloaded or uploaded with GitHub or GitLab.</p>
     </div> -->
 
-    <ul>
-    <h3>Friendly coding reminders:</h3>
-    <li>The first rule of Coding Bootcamp is to not talk about Coding Bootcamp! :)</li>
-    <li>In order to copy someone else's repository, you must first Fork it via Github/Gitlab</li>
-    <li>Next, you must clone it in order to download a repository to your computer</li>
-    <li>You'll also need to launch git on your computer to start making changes locally to your recently cloned repo along with Visual Code</li>
+    <!-- <section>
+    <h3>Before getting started:</h3>
+    <li>In order to copy someone else's repository to your won GitHub repositories, you must first <u>Fork</u> it via Github/Gitlab</li>
+    <li>Next, if you want to download a copy to your computer, then you must <u>Clone</u> it</li>
+    <li>You'll also need to launch git on your computer to start making changes locally to your recently cloned repo along with VSC (Visual Code)</li>
     <br><img src="assets/yancy-min-842ofHC6MaI-unsplash.jpg"
     alt="Coding image" width="500" height="200">
-    </ul>
+    </section> -->
 
     <ol><h3>Git bash Navigation & Visual Studio Code</h3>
     <li>First, start by <b>Forking</b> the repository via Github</li>
@@ -102,17 +116,16 @@
     </ul>
 
     <ul>
-        <dl><h3>Uploading changes back to Github</h3>
-            <dt>Using Git bash, select the files you want to send back to Github
-            </dt>
-            <dd>To add all modified files to Github, simply type:
-            <dd class="user-select-all"><span class="hcode">git add --all</span></dd>
-            <!-- Add from BS, Interactions -->
-        </dl>
+        <dt><h3>Uploading changes back to Github</h3>
+        <dt>Using Git bash, select the files you want to send back to Github</dt>
+        <dt>To add all modified files to Github, simply type:</dt>
+        <dt class="user-select-all">
+        <span class="hcode">git add --all</span>
+        </dt>
+        <!-- Add from BS, Interactions -->
+        </dt>
     </ul>
     
-    <p class="user-select-all">This paragraph will be entirely selected when clicked by the user.</p>
-
     <ol><h3>Commit Time:</h3>
         <dt>Now let's Commit the files and include a description of the Commit
         </dt>
@@ -151,7 +164,7 @@
         </dt>
     </ol>
 
-    <footer class="shadow-lg p-3 mb-5 bg-white rounded">New Footer</footer>
+    <footer class="shadow-lg p-3 mb-5 bg-gray rounded">New Footer</footer>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
